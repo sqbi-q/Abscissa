@@ -1,0 +1,574 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Abscissa</title>
+  </head>
+
+  <body>
+    <article style="margin-top: 15vh; margin-bottom: 15vh; padding-top: 5vh; padding-bottom: 5vh;">
+      <!-- logo -->
+      <div>
+        <h1 id="site_logo">Abscissa</h1>
+      </div>
+
+      <!-- desc -->
+      <div>
+        <p class="center">
+          Strona, która umożliwia uzyskanie oceny <b><i><u>celującej</u></i></b>, bądź
+          bardzo dobrej - chyba, że coś pójdzie nie tak. W takim wypadku najlepiej jest
+          sie rzucić w bezkres eskapizmu,
+          grając w
+          <a href="#games_article" onclick="showThemeArticle('games_article');">dobre gry</a>
+          oraz słuchającej
+          <a href="#music_article" onclick="showThemeArticle('music_article');">muzyki</a>.
+          Oczywiście nie jest to rozwiązanie permamentne, albowiem nic takowym nie jest.
+        </p>
+
+        <p id="show_more_desc" class="center" style="display: none">
+          Wraz z nowymi odkryciami, ciekawość nasza rośnie. Ciekawość pozwala nam 
+          <a href="#hidden_article" onclick="showThemeArticle('hidden_article');">więcej odkryć</a>.
+        </p>
+      </div>
+    </article>
+
+    <main>
+
+      <article class="theme_article" id="games_article" style="display: none;">
+
+        <header>
+          <h1>Dobre gry</h1>
+          <p>obiektywnie dobre gry, jesli sie nie zgadzasz z tą listą, jesteś najprościej w błedzie.</p>
+          <hr>
+        </header>
+
+
+        <div>
+          <h1><a href="https://www.bobsnail.com/">Bob Ślimak</a></h1>
+
+          <div class="desc">
+            <img class="thumbnail" src="snail-bob.jpg" />
+
+            <p class="center">
+              Bob ślimak to dobra, stara, flashowa gra; ogólnie to trzeba pograć jak sie nie 
+              grało nigdy to sie nie wie co to dobre flashowe gry. Klikanie myszką w
+              grze, majstrowanie przy prędkości boba. Trzeba być 
+              <a href="#site_logo" onclick="showMore();">spostrzegawczym</a>, żeby znaleźć 
+              wszystkie gwiazdki.
+            </p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div>
+          <h1><a href="https://crawl.develz.org/">DCSS</a></h1>
+
+          <div class="desc">
+            <p class="center">
+              Dungeon Crawl Stone Soup to jest rougelike gra rpg, to znaczy, że
+              umierasz postacią permamentnie jak stracisz życie. Poziomy są
+              generowane, wraz ze potworzyskami, itemami, i wszystkim to co dobre.
+              Jest dużo postaci i jest dobry przekaz, bo dobry przekaz jest
+              najważniejszy.
+            </p>
+
+            <img class="thumbnail" src="Dcss.0.21.webtiles.Elven-Halls.png" />
+          </div>
+        </div>
+
+        <hr>
+
+        <div>
+          <h1>
+            <a href="https://amanita-design.net/games/machinarium.html">Machinarium</a>
+          </h1>
+
+          <div class="desc">
+            <img class="thumbnail" src="machinarium.jpg" />
+
+            <p class="center">
+              Wskaż i Klikaj; gdyby ktoś nie rozlał oleju, to gra była by
+              zdecydowanie krótsza. Dobra gra.
+            </p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div>
+          <h1>
+            <a href="https://store.steampowered.com/app/397740/Hylics/">Hylics</a>
+          </h1>
+
+          <div>
+            <div class="desc">
+              <p class="center">
+                Twórca palił zioło, bawił sie gliną/plasteliną i użył mielarki do
+                mięsa w celu uzyskania OST. Innymi słowy bardzo dobra gra, która
+                przez swoją abstrakcyjno-surrealistyczną nature jest dobrze
+                wspomina przez wielu graczy gier niezależnych. Warto też pograć w
+                Hylics 2.
+              </p>
+
+              <img class="thumbnail" src="hylics_gibby.gif" />
+              
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="theme_article" id="music_article" style="display: none;">
+        
+        <header>
+          <h1>Dobra muzyka</h1>
+          <p>polski rap z wulgaryzmami.</p>
+          <hr>
+        </header>
+
+        <div>
+          <h1><a href="https://youtu.be/_jI6iAa-cC0">Hava Naguila - Techno Remix</a></h1>
+          <div class="desc">
+            <p class="center">
+              Hava Naguila, ale techno. Nic dodać, nic ująć.
+            </p>
+
+            <iframe class="youtube_player" src="https://www.youtube.com/embed/_jI6iAa-cC0" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <hr>
+
+        <div>
+          <h1><a href="https://youtu.be/UlfzD-NLKXQ">Black Magick SS - Rainbow Nights (Cały Album)</a></h1>
+          <div class="desc">
+            <p class="center">
+              dobra muzyka
+            </p>
+
+            <iframe class="youtube_player" src="https://www.youtube.com/embed/UlfzD-NLKXQ" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <hr>
+
+        <div>
+          <h1><a href="https://youtu.be/I4_-kZMp_3Y">Morowe - Głęboko pod ziemią</a></h1>
+          <div class="desc">
+            <pre class="center">
+  Wstali we dwóch, sami, od stołu,
+  Ogromny majestat odczuwając,
+  Ale to oni byli bogiem,
+  Alkohol i dym ciała ich wypełnił
+  I w pół przezroczyste bliźniaczki
+  Stołem stracili.</pre>
+
+            <iframe class="youtube_player" src="https://www.youtube.com/embed/I4_-kZMp_3Y" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+        
+        <hr>
+
+        <div>
+          <h1><a href="https://youtu.be/iXR-FXhiXCE">Black Magick SS - Rainbow Nights (Cały Album)</a></h1>
+          <div class="desc">
+            <p class="center">
+              Wędrowcy Tułacze Zbiegi to konkretny zespół. Ten album po prostu mi sie podoba. Warto ogarnąć
+              "Marynistyke Suchego Lądu", "Berliner Vulkan", "Kiedy deszcz zaczął padać na zawsze".
+            </p>
+
+            <iframe class="youtube_player" src="https://www.youtube.com/embed/iXR-FXhiXCE" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <hr>
+
+        <div>
+          <h1><a href="https://youtu.be/RNAdRBGYzI4">Gruzja - Jeszcze Nie Mamy Na Was Pomysłu (Cały Album)</a></h1>
+          <div class="desc">
+            <img src="gruzja.png" class="center" style="max-width: 50%; object-fit: contain;">
+
+            <iframe class="youtube_player" src="https://www.youtube.com/embed/RNAdRBGYzI4" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- style="display: none;" -->
+      <article class="theme_article" id="hidden_article" style="display: none;">
+        <header>
+          <h1>Ukryty artykuł</h1>
+          <p>???</p>
+          <hr>
+        </header>
+
+        <div>
+          <h1>Problem łańcucha</h1>
+          
+          <p>
+            Wyobraźmy sobie zbiór <i>E</i>, składający się z <i>n</i> różnych elementów.
+            Zbiór <i>E<sub>k</sub></i> to zbiór N-elementowych wariacji z powtórzenami 
+            elementów ze zbioru E.
+
+            Dla przykładu:
+          </p>
+          <pre>
+Niech E = {A, B, C}; N = 2
+E<sub>k</sub> = {AA, AB, AC, BA, BB, BC, CA, CB, CC}
+          </pre>
+
+          <p>
+            Ustalmy teraz łańcuch <i>L</i>.
+            Łańcuch <i>L</i> możemy podzielić na nieskończoną ilość elementów długości <i>N</i>;
+            Takie elementy nazwę <i>kursorem</i> <i>C<sub>c</sub></i>.
+            
+            <br>
+            Kursor <i>C<sub>c</sub></i> tworzony jest z elementów łańcucha <i>L</i>,
+            gdzie <i>c</i> to liczba całkowita, oznaczająca pozycje znaku łańcucha, 
+            od którego ma kursor zacząć iterować (c=0 oznacza pierwszy znak).
+            Iterując przez <i>N</i> znaków łańcucha (począwszy od <i>c</i>-tego znaku),
+            dopisujemy do kursora znak.
+
+            Łańcuch <i>L</i> "zapętla się", to znaczy że kursor który przekroczył ilość znaków 
+            łańcucha <i>L</i>, iteruje od początku łańcucha.
+            
+            Dla przykładu:
+          </p>
+
+          <pre>
+Niech L=ABC; N=2
+
+C<sub>0</sub> = AB    ( [AB]C )
+C<sub>1</sub> = BC    ( A[BC] )
+C<sub>2</sub> = CA    ( A]B[C , AB[CA]BCABC...)
+C<sub>3</sub> = AB    ( ABC[AB]CABCABC... )
+          </pre>
+
+          <p>
+            
+            Sume tych kursorów, gdy c={0, 1, 2, 3...n}, możemy zapisać jako zbiór 
+            <i>C<sub>k</sub></i>.
+          
+            Dla przykładu:
+          </p>
+          <pre>
+Niech L=ABC; N=2
+C<sub>0</sub> = AB
+C<sub>1</sub> = BC
+C<sub>2</sub> = CA
+C<sub>k</sub> = {AB, BC, CA}
+          </pre>
+
+          <p>
+            Trywialny łańcuch <i>L</i>, którego suma kursorów jest równa 
+            <i>E<sub>k</sub></i>, można stworzyć poprzez konkatenacje elementów 
+            <i>E<sub>k</sub></i>.
+
+            Dla przykładu:
+          </p>
+          <pre>
+Przykład 1:
+
+Niech E={A, B, C}; N=2
+E<sub>k</sub>={AA, AB, AC, BA, BB, BC, CA, CB, CC}
+L=AAABACBABBBCCACBCC
+
+C<sub>0</sub> = AA    ( [AA]ABACBABBBCCACBCC )
+C<sub>1</sub> = AA    ( A[AA]BACBABBBCCACBCC )
+C<sub>2</sub> = AB    ( AA[AB]ACBABBBCCACBCC )
+C<sub>3</sub> = BA    ( AAA[BA]CBABBBCCACBCC )
+C<sub>4</sub> = AC    ( AAAB[AC]BABBBCCACBCC )
+C<sub>5</sub> = CB    ( AAABA[CB]ABBBCCACBCC )
+C<sub>6</sub> = BA    ( AAABAC[BA]BBBCCACBCC )
+C<sub>7</sub> = AB    ( AAABACB[AB]BBCCACBCC )
+C<sub>8</sub> = BB    ( AAABACBA[BB]BCCACBCC )
+C<sub>9</sub> = BB    ( AAABACBAB[BB]CCACBCC )
+C<sub>10</sub> = BC   ( AAABACBABB[BC]CACBCC )
+C<sub>11</sub> = CC   ( AAABACBABBB[CC]ACBCC )
+C<sub>12</sub> = CA   ( AAABACBABBBC[CA]CBCC )
+C<sub>13</sub> = AC   ( AAABACBABBBCC[AC]BCC )
+C<sub>14</sub> = CB   ( AAABACBABBBCCA[CB]CC )
+C<sub>15</sub> = BC   ( AAABACBABBBCCAC[BC]C )
+C<sub>16</sub> = CC   ( AAABACBABBBCCACB[CC] )
+C<sub>17</sub> = CA   ( A]AABACBABBBCCACBC[C , AAABACBABBBCCACBC[CA]AABACBABBBCCACBCC... )
+
+C<sub>k</sub> = { AA, AA, AB, BA, AC, CB, BA, AB, BB, BB, BC, CC, CA, AC, CB, BC, CC, CA } 
+= { AA, AB, BA, AC, CB, BB, BC, CC, CA }
+= { AA, AB, AC, BA, BB, BC, CA, CB, CC } 
+= E<sub>k</sub>
+          </pre>
+
+          <pre>
+Przykład 2:
+
+Niech E={A, B}; N=2
+E<sub>k</sub>={AA, AB, BA, BB}
+L=AAABBABB
+
+C<sub>0</sub> = AA    ( [AA]ABBABB )
+C<sub>1</sub> = AA    ( A[AA]BBABB )
+C<sub>2</sub> = AB    ( AA[AB]BABB )
+C<sub>3</sub> = BB    ( AAA[BB]ABB )
+C<sub>4</sub> = BA    ( AAAB[BA]BB )
+C<sub>5</sub> = AB    ( AAABB[AB]B )
+C<sub>6</sub> = BB    ( AAABBA[BB] )
+C<sub>6</sub> = BB    ( A]AABBAB[B , AAABBAB[BAAABBABB... )
+
+C<sub>k</sub> = { AA, AA, AB, BB, BA, AB, BB, BB }
+= { AA, AB, BB, BA }
+= { AA, AB, BA, BB }
+= E<sub>k</sub>
+          </pre>
+
+          <p>
+            Najoptymalniejszy łańcuch <i>L</i> spełnia następujące cechy:
+          </p>
+          <ul>
+            <li><p>suma kursorów równa się <i>E<sub>k</sub></i>,</p></li>
+            <li><p>długość łańcucha jest najmniejsza z wszystkich możliwych.</p></li>
+          </ul>
+
+          <p>
+            Przykładem najoptymalniejszego łańcucha <i>L</i> dla <i>E={A,B}</i>; <i>N=2</i> 
+            jest L=AABB.
+          </p>
+          <pre>
+Niech E={A, B}; N=2
+L=AABB
+C<sub>0</sub>=AA
+C<sub>1</sub>=AB
+C<sub>2</sub>=BB
+C<sub>3</sub>=BA
+C<sub>k</sub>=E<sub>k</sub>
+          </pre>
+
+          <hr>
+
+
+          <h3>
+            Problem: Jak wygenerować najoptymalniejszy łańcuch <i>L</i> dla dowolnych E oraz N?
+          </h3>
+
+          <h4>Moje podejście</h4>
+          
+          <hr>
+
+          <p>
+            Do rozwiązania problemu zapisałem kod generujący <i>E<sub>k</sub></i>, "łączący"
+            elementy ze sobą wspólną częścią. Element bazowy oznacza element do którego łączy się
+            inny element. W momencie, gdy do elementu bazowego można przyłączyć kilka elementów o
+            tej samej końcówce, rozpatrzane są wszystkie elementy osobno. Dla przykładu:
+          </p>
+          <pre>
+Niech E={A,B}; N=2
+E<sub>k</sub>={AA, AB, BA, BB}
+          </pre>
+          
+          <pre>
+iter. 0:
+shift=0
+|AA|  (baza)
+|AB|
+|BA|
+|BB|
+          </pre>
+          <p>
+            Nie ma części wspólnej między bazą a elementami łączącymi.
+          </p>
+
+
+          <pre>
+iter. 0:
+shift=1
+A|A|  (baza)
+>|A|B
+>|B|A
+>|B|B
+          </pre>
+          <p>
+            Jest jeden element, który można połączyć z bazą: AB. Rozpatrzmy 
+            połączenie AA z AB.
+          </p>
+
+          <pre>
+AA
+>AB
+---
+AAB
+shift_merge(AA, AB, shift) = AAB
+
+iter. 1
+shift=1
+A|AB| (baza)
+>|BA|
+>|BB|
+          </pre>
+          <p>
+            Nie ma części wspólnej między bazą a elementami łączącymi.
+          </p>
+
+          <pre>
+iter. 1
+shift=2
+AA|B|
+>>|B|A
+>>|B|B
+          </pre>
+          <p>
+            Są dwa elementy, które można połączyć z bazą: BA oraz BB. Rozpatrzmy 
+            połączenie AAB z BA oraz AAB z BB.
+          </p>
+
+          <ul>
+            <li>
+              <p><b>AAB + BA:</b></p>
+              <pre>
+AAB
+>>BA
+----
+AABA
+shift_merge(AAB, AB, shift) = AABA
+
+iter. 2
+shift=2
+AABA
+>>BB
+              </pre>
+              <p>
+                Nie ma części wspólnej między bazą a elementami łączącymi.
+              </p>
+
+              <pre>
+iter. 2
+shift=3
+AABA
+>>>BB
+              </pre>
+              <p>-||-</p>
+              <pre>
+iter. 2
+shift=4
+AABA
+>>>>BB
+              </pre>
+              <p>
+                Jest jeden element, który można połączyć z bazą: BB. Rozpatrzmy 
+                połączenie AABA z BB.
+              </p>
+
+              <pre>
+AABA
+>>>>BB
+----
+AABABB
+shift_merge(AABA, BB, shift) = AABABB
+
+iter. 3
+shift=4
+AABABB
+>>>>
+              </pre>
+              <p>
+                Nie ma już elementów łączących, możemy zwrócić baze: "AABABB".
+              </p>
+            </li>
+          
+            <li>
+              <p><b>AAB + BB:</b></p>
+              <pre>
+AAB
+>>BB
+----
+AABB
+shift_merge(AAB, BB, shift) = AABB
+
+iter. 2
+shift=2
+AABB
+>>BA
+              </pre>
+
+              <p>
+                Nie ma części wspólnej między bazą a elementami łączącymi.
+              </p>
+
+              <pre>
+iter. 2
+shift=3
+AABB
+>>>BA
+              </pre>
+              <p>
+                Jest jeden element, który można połączyć z bazą: BA. Rozpatrzmy 
+                połączenie AABB z BA.
+              </p>
+
+              <pre>
+AABB
+>>>BA
+-----
+AABBA
+shift_merge(AABB, BA, shift) = AABBA
+
+iter. 3
+AABBA
+>>>
+              </pre>
+              <p>
+                Nie ma już elementów łączących, możemy zwrócić baze: "AABBA".
+              </p>
+            </li>
+          </ul>
+
+          <p>
+            Zwracane są dwie wartości: AABABB oraz AABBA. Najkrótszym ciągiem jest
+            tutaj AABBA - który po usunięciu zbędnego A jest najoptymalniejszym łańcuchem
+            <i>L</i> dla E={A,B} oraz N=2.
+          </p>
+
+          <hr>
+
+          <p>
+            Problem z kodem pojawia się przy E o dużej ilości elementów,
+            lub gdy N przekracza 2. Najprawdopodobnie jest to spowodowane przez 
+            zbyt dużą ilość kombinacji. Dlatego też, problem nie został rozwiązany
+            przeze mnie.
+          </p>
+
+          <p>
+            Kod: lancuch_gen.py <a href="lancuch_gen.py">[pobierz plik]</a>
+          </p>
+
+        </div>
+
+      </article>
+
+    </main>
+  
+    <footer>
+      <p>Abscissa</p>
+      <p>kopioprawa © sqbi 2021-2021. Wszystkie prawa obstrzyżone.</p>
+    </footer>
+
+
+    <script src="on_events.js"></script> 
+
+  </body>
+</html>
