@@ -28,7 +28,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         e.preventDefault();
         var href = this.getAttribute("href");
         var elem = document.querySelector(href)||document.querySelector("a[name="+href.substring(1, href.length)+"]");
-        window.scroll({
+        document.body.scroll({
             top: elem.offsetTop, 
             left: 0, 
             behavior: 'smooth' 
